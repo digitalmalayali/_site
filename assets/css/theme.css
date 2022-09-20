@@ -581,3 +581,63 @@ body::-webkit-scrollbar-thumb {
 .fa-brands:hover {
   color: #ffc107;
 }
+
+.ad {
+  text-align: center;
+  background: #FFF;
+  padding-top: 2rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* ---------------------- */
+
+.modal-fader {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 99998;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-window {
+  display: none;
+  width: 200px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+
+@media (min-width:500px) {
+  .modal-window {
+    width: 320px;
+  }
+}
+
+@media (min-width:800px) {
+  .modal-window {
+    width: 450px;
+  }
+}
+
+.modalimg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  float: left;
+  text-align: center;
+  background-image: url(/assets/images/kavadiyattam-jagathy-chammal.jpg);
+  background-size: cover;
+  background-position: center;
+}
