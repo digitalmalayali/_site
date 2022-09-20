@@ -582,14 +582,6 @@ body::-webkit-scrollbar-thumb {
   color: #ffc107;
 }
 
-.ad {
-  text-align: center;
-  background: #FFF;
-  padding-top: 2rem;
-  max-width: 100%;
-  overflow: hidden;
-}
-
 /* ---------------------- */
 
 .modal-fader {
@@ -635,6 +627,7 @@ body::-webkit-scrollbar-thumb {
   height: 100px;
   border-radius: 50%;
   display: block;
+  float: none;
   float: left;
   text-align: center;
   background-image: url(/assets/images/kavadiyattam-jagathy-chammal.jpg);
