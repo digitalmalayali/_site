@@ -634,3 +634,13 @@ body::-webkit-scrollbar-thumb {
   background-size: cover;
   background-position: center;
 }
+
+.pixelfed {
+  width: 1.32em;
+  vertical-align: -0.30em;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%) opacity(50%);
+}
+
+.pixelfed:hover {
+  filter: invert(71%) sepia(74%) saturate(1140%) hue-rotate(353deg) brightness(105%) contrast(103%);
+}
