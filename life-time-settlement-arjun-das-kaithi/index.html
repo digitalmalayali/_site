@@ -119,8 +119,8 @@
   </nav>
 
   <div class="banner bg-warning">
-    <p class="fs-6 pt-2 pb-2 ps-1 pe-1">Some images might get overlapped with others while loading the website. If that
-      happens, please refresh the page.</p>
+    <p class="fs-6 pt-2 pb-2 ps-1 pe-1">🎄 We're running a Christmas giveaway on Instagram. 🎁 <a target="_blank"
+        class="fw-bold" href="https://www.instagram.com/p/ClnAzDbhVGr/">Enter now</a>! Last date - December 8. 🎅</p>
   </div>
 
   <div class="modal-fader"></div>
@@ -128,7 +128,8 @@
     <h3 class="text-white">അഡ്ബ്ലോക്കർ ഓഫാക്കെടാ ജാഡ തെണ്ടീ!</h3>
     <!-- <img src="/assets/images/kavadiyattam-jagathy-chammal.jpg" class="modalimg rounded me-2"> -->
     <div class="modalimg me-4"></div>
-    <p class="text-white mt-3">ഞങ്ങൾ കുറച്ച് കാശുണ്ടാക്കുന്നത് നിനക്ക് പിടിക്കുന്നില്ലല്ലേ.<br> ഇത്രക്ക് അസൂയ പാടില്ലെടാ ചെറ്റേ!
+    <p class="text-white mt-3">ഞങ്ങൾ കുറച്ച് കാശുണ്ടാക്കുന്നത് നിനക്ക് പിടിക്കുന്നില്ലല്ലേ.<br> ഇത്രക്ക് അസൂയ പാടില്ലെടാ
+      ചെറ്റേ!
     </p>
   </div>
 
@@ -301,7 +302,7 @@
     <span class="credits">
 
         <div class="text-white-50">
-                <i class="fa-solid fa-circle fa-2xs text-success me-1"></i> Last updated on December 02, 2022.<br>
+                <i class="fa-solid fa-circle fa-2xs text-success me-1"></i> Last updated on December 03, 2022.<br>
             Powered <i class="fa-solid fa-heart text-danger"></i> by <a class="bg-digilink" target="_blank"
                 href="https://www.digitalmalayali.in"><u>Digital Malayali</u></a>.
         </div>
@@ -341,6 +342,19 @@
     integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
     async></script>
   <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript">
+
+    var $grid = $('#masonry').masonry({
+      itemSelector: '.col',
+      percentPosition: true
+    });
+
+    // layout Masonry after each image loads
+    $grid.imagesLoaded().progress(function () {
+      $grid.masonry();
+    });
+
+  </script>
   <script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
 
