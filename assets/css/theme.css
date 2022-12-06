@@ -145,11 +145,6 @@ article .card-body {
   background-color: #ddd;
 }
 
-.navbar-nav.categories a {
-  font-size: 15px;
-  font-weight: 700;
-}
-
 .showcat {
   margin: auto;
   padding: 0 15px 40px 15px;
@@ -643,4 +638,20 @@ body::-webkit-scrollbar-thumb {
 
 .pixelfed:hover {
   filter: invert(71%) sepia(74%) saturate(1140%) hue-rotate(353deg) brightness(105%) contrast(103%);
+}
+
+.back-to-top {
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  bottom: 2rem;
+  right: 2rem;
+  background-image: url(https://i.imgur.com/WqeX70S.png);
+  background-size: cover;
+  z-index: 1;
+  display: none;
+}
+
+.back-to-top:hover {
+  background-image: url(https://i.imgur.com/j2HQmvB.png);
 }
