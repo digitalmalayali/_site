@@ -1,17 +1,7 @@
-@font-face {
-  font-family: 'Noto Sans Malayalam';
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/notosansmalayalam/v21/sJoi3K5XjsSdcnzn071rL37lpAOsUThnDZIfPdbeSNzVakglNM-Qw8EaeB8Nss-_RuDNG1bFn6E.woff2) format('woff2');
-  unicode-range: U+0307, U+0323, U+0964-0965, U+0D02-0D7F, U+200C-200D, U+20B9, U+25CC;
-}
-
 body {
   padding-top: 70px;
   background-color: #0a0909;
-  font-family: 'Noto Sans Malayalam', 'Noto Color Emoji', 'Segoe UI', sans-serif;
+  font-family: 'Noto Sans Malayalam', 'Noto Color Emoji', sans-serif;
 }
 
 a:hover {
