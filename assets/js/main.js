@@ -3,30 +3,20 @@
 	  if ($(".ad").first().height() < 10) {
 		$(".ad").each(function () {
 		  $(".modal-fader").show();
-		  $(".modal-window").on("shown.bs.modal", function() {
-			console.log("Modal shown"); // Added console.log statement
-  
+		  $(".modal-window").show(function() {
 			// Create an audio element
 			var audio = new Audio('https://files.catbox.moe/7hkg4l.ogg');
   
-			// Event listener to initiate audio playback on window click
-			var playAudioOnWindowClick = function() {
-			  // Play the audio
-			  audio.play();
-			  console.log("Audio played"); // Added console.log statement
+			// Preload the audio file
+			audio.preload = 'auto';
   
-			  // Remove the event listener after the audio is played
-			  window.removeEventListener('click', playAudioOnWindowClick);
-			};
-  
-			// Add event listener to initiate audio playback on window click
-			window.addEventListener('click', playAudioOnWindowClick);
-		  }).show();
+			// Play the audio
+			audio.play();
+		  });
 		});
 	  }
 	});
-  })();	
-  
+  })();	  
 
 // scroll body to top on click
 
