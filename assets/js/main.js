@@ -3,16 +3,17 @@
 	  if ($(".ad").first().height() < 10) {
 		$(".ad").each(function () {
 		  $(".modal-fader").show();
-		  $(".modal-window").show(function() {
+		  $(".modal-window").on("shown.bs.modal", function() {
 			// Create an audio element
-			var audio = new Audio('https://files.catbox.moe/7hkg4l.ogg');
+			var audio = new Audio('path/to/audio-file.mp3');
+  
 			// Play the audio
 			audio.play();
-		  });
+		  }).show();
 		});
 	  }
 	});
-  })();
+  })();  
   
 
 // scroll body to top on click

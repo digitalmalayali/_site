@@ -604,7 +604,7 @@ body::-webkit-scrollbar-thumb {
   background: #fff;
   padding: 10px 20px;
   border-radius: 5px;
-  font-family: sans-serif;
+  font-family: 'Noto Sans Malayalam', sans-serif;
 }
 
 @media (min-width:500px) {
